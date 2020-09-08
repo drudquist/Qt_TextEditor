@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //set text edit area take up fullscreen
+    this->setCentralWidget(ui->textEdit);
 }
 
 MainWindow::~MainWindow()
